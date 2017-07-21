@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="身高"
+            android:id="@+id/textView14"
+            android:textSize="18sp"
+            android:textColor="#020202"
+            android:layout_above="@+id/editText7" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:inputType="none"
+            android:layout_weight="1"
+            android:maxLength="3"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="體重"
+            android:id="@+id/textView15"
+            android:textSize="18sp"
+            android:textColor="#020202"
+            android:layout_alignBottom="@+id/editText7"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:inputType="none"
+            android:layout_weight="1"
+            android:maxLength="3"
+            android:gravity="center"
+            android:layout_below="@+id/editText6"
+            android:layout_alignStart="@+id/editText6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="年齡"
+        android:id="@+id/textView16"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textView17"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:gravity="center"
+        android:layout_below="@+id/editText7"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/radioGroup"
+        android:layout_alignWithParentIfMissing="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/radioGroup1">
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="輕度"
+            android:id="@+id/radioButton1"
+            android:checked="false"
+            android:layout_below="@+id/textView17"
+            android:layout_alignStart="@+id/textView20" />
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="中度"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton1"
+            android:layout_toEndOf="@+id/radioButton1" />
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="重度"
+            android:id="@+id/radioButton3"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton2"
+            android:layout_toEndOf="@+id/radioButton2" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="計算卡路里"
+        android:id="@+id/textView19"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textView20"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:gravity="center"
+        android:layout_below="@+id/radioGroup"
+        android:layout_toEndOf="@+id/textView21" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textView21"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:gravity="center"
+        android:layout_below="@+id/textView20"
+        android:layout_toStartOf="@+id/textView26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="理想體重"
+        android:id="@+id/textView22"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_above="@+id/radioGroup1"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup1"
+        android:layout_below="@+id/textView21"
+        android:layout_alignEnd="@+id/button3">
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="增加"
+            android:id="@+id/radioButton4"
+            android:checked="false"
+            android:layout_below="@+id/textView21"
+            android:layout_alignStart="@+id/textView21" />
+
+        <RadioButton
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="減少"
+            android:id="@+id/radioButton5"
+            android:checked="false"
+            android:layout_alignTop="@+id/radioButton4"
+            android:layout_toEndOf="@+id/radioButton4" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="是否想調整體重"
+        android:id="@+id/textView23"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_above="@+id/textView26"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textSize="18sp"
+        android:inputType="none"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_above="@+id/textView26"
+        android:layout_toEndOf="@+id/radioGroup1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="公斤"
+        android:id="@+id/textView24"
+        android:textSize="15sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_toEndOf="@+id/editText8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="每日建議攝取約"
+        android:id="@+id/textView25"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView26"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textView26"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:gravity="center"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textView27"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:gravity="center"
+        android:layout_below="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="早餐建議攝取約"
+        android:id="@+id/textView28"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="kal"
+        android:id="@+id/textView29"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_above="@+id/textView27"
+        android:layout_toStartOf="@+id/editText8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="kal"
+        android:id="@+id/textView30"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_alignStart="@+id/textView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="kal"
+        android:id="@+id/textView31"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_toStartOf="@+id/editText8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="公斤"
+        android:id="@+id/textView32"
+        android:textSize="15sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_alignStart="@+id/textView31" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView33"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_below="@+id/textView27"
+        android:layout_toStartOf="@+id/textView30"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView34"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_below="@+id/textView33"
+        android:layout_alignStart="@+id/textView33"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="次"
+        android:id="@+id/textView35"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_above="@+id/textView34"
+        android:layout_toEndOf="@+id/textView33" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="次"
+        android:id="@+id/textView36"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView34"
+        android:layout_toEndOf="@+id/textView34" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="未取貨次數"
+        android:id="@+id/textView37"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_above="@+id/textView34"
+        android:layout_alignStart="@+id/textView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="停權次數"
+        android:id="@+id/textView38"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_alignBottom="@+id/textView34"
+        android:layout_alignStart="@+id/textView37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/textView18"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:layout_above="@+id/textView20"
+        android:layout_alignParentStart="true"
+        android:text="每日運動量" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/textView39"
+        android:textSize="18sp"
+        android:textColor="#020202"
+        android:gravity="center"
+        android:layout_below="@+id/textView34"
+        android:layout_alignStart="@+id/textView34" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView17"
+        android:onClick="onClick" />
+
+</RelativeLayout>
+

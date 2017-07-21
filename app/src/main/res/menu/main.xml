@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:balloonberry="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/new_game"
+        android:icon="@drawable/ic_cast_dark"
+        android:title="string/new_game"
+        balloonberry:showAsAction="always"/>
+    <item android:id="@+id/help"
+        android:icon="@drawable/a1420816416"
+        android:title="string/help" />
+
+</menu>
